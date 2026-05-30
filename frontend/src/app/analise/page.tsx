@@ -1,7 +1,6 @@
 "use client";
 
 import LottieAnimationLoading from "@/src/components/animations/loading";
-import Loadable from "next/dist/shared/lib/loadable.shared-runtime";
 import { useState } from "react";
 
 export default function AudioPage() {
