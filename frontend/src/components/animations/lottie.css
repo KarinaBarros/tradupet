@@ -6,38 +6,7 @@
     flex-direction: column;
 }
 
-.container-lottie .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-}
-
-.container-lottie p{
-    color: white;
-    font-family: var(--font);
-    font-size: 30px;
-}
-
 .animacao{
     width: 200px;
     height: 200px;
-}
-
-.container-lottie-github{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.animacao-topo{
-    width: 200px;
-}
-
-@media(max-width:375px){
-    .container-lottie p{
-        font-size: 20px;
-    }
 }

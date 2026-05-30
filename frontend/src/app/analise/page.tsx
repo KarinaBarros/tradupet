@@ -1,5 +1,6 @@
 "use client";
 
+import LottieAnimationAnimais from "@/src/components/animations/animais";
 import LottieAnimationLoading from "@/src/components/animations/loading";
 import { useState } from "react";
 
@@ -9,6 +10,7 @@ export default function AudioPage() {
   const [loading, setLoading] = useState(false);
 
   async function handleUpload() {
+    setResult(null);
     if (!file) return;
 
     setLoading(true);
@@ -52,6 +54,7 @@ export default function AudioPage() {
           <p>Comportamento: {result.comportamento}</p>
           <p>Contexto: {result.contexto}</p>
           <p>Fala: {result.fala}</p>
+          <LottieAnimationAnimais animal={result.animal} />
         </div>
       )}
     </div>

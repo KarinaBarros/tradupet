@@ -26,8 +26,7 @@ export default function LottieAnimationLoading() {
   }
 
   return (
-    <div className="container-lottie-github">
-      <div className="container-github">
+    <div className="container-lottie">
         <div className="animacao">
           {Lottie && (
             <Lottie
@@ -37,7 +36,6 @@ export default function LottieAnimationLoading() {
             />
           )}
         </div>
-      </div>
     </div>
   );
 }
