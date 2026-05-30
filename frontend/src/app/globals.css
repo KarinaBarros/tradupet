@@ -23,10 +23,10 @@
 body {
   /* background: var(--background);
   color: var(--foreground); */
+  font-family: var(--font-inter);
   background: #ffffff;
   color: #171717;
-  font-family: Arial, Helvetica, sans-serif;
-} 
+}
 
 html,
 body,
@@ -37,4 +37,13 @@ body,
 button,
 a {
   cursor: url("/pointer.jpeg"), pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-poppins);
 }
