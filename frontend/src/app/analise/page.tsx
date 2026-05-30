@@ -1,5 +1,7 @@
 "use client";
 
+import LottieAnimationLoading from "@/src/components/animations/loading";
+import Loadable from "next/dist/shared/lib/loadable.shared-runtime";
 import { useState } from "react";
 
 export default function AudioPage() {
@@ -34,17 +36,15 @@ export default function AudioPage() {
   return (
     <div className="flex flex-col">
       <h1>Audio Analyzer</h1>
-
       <input
         type="file"
         accept="audio/*"
         onChange={(e) => setFile(e.target.files?.[0] || null)}
       />
-
       <button onClick={handleUpload} disabled={loading}>
         {loading ? "Analisando..." : "Enviar"}
       </button>
-
+      {loading && <LottieAnimationLoading />}
       {result && (
         <div>
           <h2>Resultado</h2>
