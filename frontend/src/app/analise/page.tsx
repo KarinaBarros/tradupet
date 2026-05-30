@@ -28,10 +28,18 @@ export default function AudioPage() {
 
       const data = await res.json();
       setResult(data);
+      playAudio();
     } catch (err) {
       console.error(err);
     } finally {
       setLoading(false);
+    }
+  }
+
+  function playAudio() {
+    if (file) {
+      const audio = new Audio(URL.createObjectURL(file));
+      audio.play();
     }
   }
 
