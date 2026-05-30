@@ -3,6 +3,7 @@
 import LottieAnimationAnimais from "@/src/components/animations/animais";
 import LottieAnimationLoading from "@/src/components/animations/loading";
 import { useState } from "react";
+import "./analise.css";
 
 export default function AudioPage() {
   const [file, setFile] = useState<File | null>(null);
@@ -47,14 +48,17 @@ export default function AudioPage() {
       </button>
       {loading && <LottieAnimationLoading />}
       {result && (
-        <div>
+        <div className="w-full flex flex-col items-start m-auto">
           <h2>Resultado</h2>
 
-          <p>Animal: {result.animal}</p>
+          <div className="m-auto flex flex-col bg-gray-100 p-4 rounded-lg">
+            <div className="balao-fala">
+              <p>{result.fala}</p>
+            </div>
+            <LottieAnimationAnimais animal={result.animal} />
+          </div>
           <p>Comportamento: {result.comportamento}</p>
           <p>Contexto: {result.contexto}</p>
-          <p>Fala: {result.fala}</p>
-          <LottieAnimationAnimais animal={result.animal} />
         </div>
       )}
     </div>
