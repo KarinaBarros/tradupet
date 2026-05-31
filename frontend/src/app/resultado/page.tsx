@@ -80,7 +80,7 @@ export default function Resultado() {
                 </div>
             )}
 
-            {loading &&<div className="w-full flex items-center mt-14">
+            {loading &&<div className="w-full flex items-center justify-center mt-14">
                  <LottieAnimationLoading />
             </div>}
 

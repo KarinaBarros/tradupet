@@ -196,6 +196,8 @@ Protótipo
 
 https://www.figma.com/design/NTPiFhAWgVkhr30uyXXTjh/TraduPET-?node-id=0-1&p=f&t=gMwPxdLPn04fZdk8-0
 
+---
+
 # Status do projeto
 - MVP funcional
 - Dockerizado
