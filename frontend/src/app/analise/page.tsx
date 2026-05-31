@@ -154,7 +154,7 @@ export default function AudioPage() {
           </div>
         </div>
 
-        <div className="w-full flex flex-col gap-2 mt-2">
+        <div className="w-full flex flex-col gap-2 mt-2 pb-6">
           <div className="flex gap-w w-full border-2 border-blue-500 bg-blue-100 p-4 rounded-lg items-center gap-4"
             onClick={() => animalAudio("passaro")}>
             <Image src={passaro} className="w-10 h-8" alt="Passaro" />
