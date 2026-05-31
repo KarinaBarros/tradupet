@@ -26,16 +26,14 @@ export default function LottieAnimationLoading() {
   }
 
   return (
-    <div className="container-lottie">
-        <div className="animacao">
-          {Lottie && (
-            <Lottie
-              loop
-              play
-              animationData={animationData}
-            />
-          )}
-        </div>
+    <div className="animacao">
+      {Lottie && (
+        <Lottie
+          loop
+          play
+          animationData={animationData}
+        />
+      )}
     </div>
   );
 }

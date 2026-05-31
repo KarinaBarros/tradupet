@@ -1,0 +1,44 @@
+.balao-fala {
+  position: relative;
+  display: inline-block;
+  padding: 12px 16px;
+  background: #ffffff;
+  border: 2px solid #333;
+  border-radius: 30px;
+  color: #333;
+  max-width: 250px;
+  margin-left: 140px;
+}
+
+/* Borda da seta */
+.balao-fala::before {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: 30px;
+  border-width: 14px 14px 0;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+/* Fundo da seta */
+.balao-fala::after {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  left: 32px;
+  border-width: 12px 12px 0;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+.button-link{
+    background: linear-gradient(135deg, #128FAB 0%, #F27727 100%);
+    color: white;
+    padding: 10px 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}

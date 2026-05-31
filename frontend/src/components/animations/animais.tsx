@@ -61,7 +61,7 @@ export default function LottieAnimationAnimais({ animal }: Props) {
       }
 
         return (
-    <div className="container-lottie">      
+        
         <div className="animacao">
           {Lottie && animation &&(
             <Lottie
@@ -71,7 +71,7 @@ export default function LottieAnimationAnimais({ animal }: Props) {
             />
           )}
         </div>     
-    </div>
+    
   );
 
 }

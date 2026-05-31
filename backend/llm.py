@@ -42,6 +42,8 @@ def interpret_audio(data):
     - comportamento: interpretação do que o animal está fazendo ou sentindo (ex: cachorro está bravo ou cachorro está feliz pois o latido é constante e alto)
     - contexto: baaseado no comportamento obtido e nos sons detectados crie um possível cenário (ex: o cachorro aparenta estar feliz ou ter ganhado um brinquedo novo)
     - fala: frase engraçada, filosófica e um pouco autodepreciativa em primeira pessoa, algo como se o prprio animal estivesse falando (ex: "Eita, como fala", "Vo jogar tomate em você ")
+    - estado: baseado no comportamento e contexto, defina um estado emocional geral (ex: feliz, triste, ansioso, bravo)
+    - probabilidade: baseado nos scores defina a probabilidade de o animal estar com status gerado(ex: 80%, 20%, 50%)
 
     Dados:
     {data}

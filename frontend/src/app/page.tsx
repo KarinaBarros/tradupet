@@ -2,8 +2,7 @@
 import Link from "next/link";
 import Nav from "../components/nav/nav";
 import "./page.css";
-import { FaCat, FaDog, FaVolumeUp, FaCrow } from "react-icons/fa";
-import { GiSheep, GiPig, GiCow } from "react-icons/gi";
+import { FaVolumeUp } from "react-icons/fa";
 import  cachorro  from "../assets/icons/cachorro.png";
 import gato from "../assets/icons/gato.png";
 import ovelha from "../assets/icons/ovelha.png";
