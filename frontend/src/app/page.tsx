@@ -4,6 +4,13 @@ import Nav from "../components/nav/nav";
 import "./page.css";
 import { FaCat, FaDog, FaVolumeUp, FaCrow } from "react-icons/fa";
 import { GiSheep, GiPig, GiCow } from "react-icons/gi";
+import  cachorro  from "../assets/icons/cachorro.png";
+import gato from "../assets/icons/gato.png";
+import ovelha from "../assets/icons/ovelha.png";
+import passaro from "../assets/icons/passaro.png";
+import porco from "../assets/icons/porco.png";
+import vaca from "../assets/icons/vaca.png";
+import Image from "next/image";
 
 export default function Home() {
 
@@ -24,7 +31,7 @@ export default function Home() {
           <span className="text-sm">Exemplo de tradução</span>
           <div className="flex flex-col p-4 rounded-lg border-2 border-cyan-300">
             <div className="flex items-center ">
-              <FaCat className="text-3xl" />
+              <Image src={gato} className="w-12 h-10" alt="Gato" />
               <div className="ml-4 flex flex-col">
                 <span className="font-bold">Gato</span>
                 <span className="text-sm text-red-500">Revoltado  </span>
@@ -85,7 +92,7 @@ export default function Home() {
         <div className="flex flex-col mx-auto mt-8 gap-4">
           <div className="flex gap-4">
             <div className="w-60 h-60 flex flex-col p-4 rounded-lg border-2 border-gray-500">
-              <FaDog className="text-7xl mx-auto" />
+              <Image src={cachorro} className="w-20 h-16 mx-auto" alt="Cachorro" />
               <span className="mt-6 font-bold">Cachorrês</span>
               <div className="mt-2 flex items-center">
                 <FaVolumeUp className="text-orange-500 text-sm" />
@@ -96,7 +103,7 @@ export default function Home() {
             </div>
 
             <div className="w-60 h-60 flex flex-col p-4 rounded-lg border-2 border-gray-500">
-              <FaCat className="text-7xl mx-auto" />
+              <Image src={gato} className="w-20 h-16 mx-auto" alt="Gato" />
               <span className="mt-6 font-bold">Gatês</span>
               <div className="mt-2 flex items-center">
                 <FaVolumeUp className="text-purple-500 text-sm" />
@@ -107,7 +114,7 @@ export default function Home() {
             </div>
 
             <div className="w-60 h-60 flex flex-col p-4 rounded-lg border-2 border-gray-500">
-              <GiSheep className="text-7xl mx-auto" />
+              <Image src={ovelha} className="w-20 h-16 mx-auto" alt="Ovelha" />
               <span className="mt-6 font-bold">Ovelhês</span>
               <div className="mt-2 flex items-center">
                 <FaVolumeUp className="text-green-400 text-sm" />
@@ -121,7 +128,7 @@ export default function Home() {
 
           <div className="flex gap-4">
             <div className="w-60 h-60 flex flex-col p-4 rounded-lg border-2 border-gray-500">
-              <FaCrow className="text-7xl mx-auto" />
+              <Image src={passaro} className="w-20 h-16 mx-auto" alt="Passaro" />
               <span className="mt-6 font-bold">Passarês</span>
               <div className="mt-2 flex items-center">
                 <FaVolumeUp className="text-cyan-500 text-sm" />
@@ -132,7 +139,7 @@ export default function Home() {
             </div>
 
             <div className="w-60 h-60 flex flex-col p-4 rounded-lg border-2 border-gray-500">
-              <GiPig className="text-7xl mx-auto" />
+              <Image src={porco} className="w-20 h-16 mx-auto" alt="Porco" />
               <span className="mt-6 font-bold">Porcoês</span>
               <div className="mt-2 flex items-center">
                 <FaVolumeUp className="text-pink-500 text-sm" />
@@ -143,7 +150,7 @@ export default function Home() {
             </div>
 
             <div className="w-60 h-60 flex flex-col p-4 rounded-lg border-2 border-gray-500">
-              <GiCow className="text-7xl mx-auto" />
+              <Image src={vaca} className="w-20 h-16 mx-auto" alt="Vaca" />
               <span className="mt-6 font-bold">Vacaês</span>
               <div className="mt-2 flex items-center">
                 <FaVolumeUp className="text-orange-500 text-sm" />
